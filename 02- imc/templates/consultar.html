@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consultar</title>
+    <link rel="stylesheet" href="/static/styles/style.css">
+</head>
+<body>
+    <nav>
+         
+        <a href="/"> Calcular imc</a>
+    </nav>
+    
+    <div class="consultar">
+        <h2>Ver imc registrado</h2>
+        <table class="consultar_tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Peso</th>
+                    <th>Altura</th>
+                    <th>IMC</th>
+                    <th>Deletar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for registros in prod %}
+                <tr>
+                    <td>{{ registros.nome }}</td>
+                    <td>{{ registros.peso}}</td>
+                    <td>{{ registros.altura }}</td>
+                    <td>{{ registros.imc }}</td>
+
+                    <td>
+                        <form action="/excluir_registros" method="GET">
+                            <input type="hidden" name="linha" value="{{ registros.linha }}">
+                            <button type="submit" class="link_registros">Deletar</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>

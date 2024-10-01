@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-primaria: Chewy;
+    --font-secundaria: Montserrat;
+    --cor-one: #f4d3da; /*cor fundo*/
+    --cor-two: #f4727a; /*cor cabeçalho*/
+    --cor-tree: #f6bbc1; /*cor botão*/
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-one);
+}
+
+nav {
+    background-color: var(--cor-two);
+    text-align: right;
+    top: 35px;
+    position: relative;
+    font-size: 70px;
+}
+ 
+nav a {
+    color: black;
+    text-decoration: underline;
+    font-family: var(--font-primaria);
+    font-size: 22px;
+    margin: 0 30px;
+    text-align: right;
+}
+ 
+nav :hover {
+     color: white;
+  
+}
+
+.consultar{
+    font-family: var(--font-secundaria);
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    left: 500px;
+
+}
+
+.titulo{
+    font-family: var(--font-primaria);
+    position: relative;
+    left: 100px;
+    font-size: 45px;
+    top: -40px; 
+}
+.nomee{
+    left: 500px;
+    position: relative;
+    font-family: var(--font-primaria);
+    border-radius: 40px;
+    padding: 15px;
+    background-color: var(--cor-tree);
+    border-color: #f6bbc1;
+    width:400px;
+    top: 50px;
+    font-size: 30px;
+}
+.nome{
+    left: 570px;
+    position: relative;
+    font-family: var(--font-primaria);
+    border-radius: 40px;
+    border-color: #f6bbc1;
+    padding: 20px;
+    top: 50px;
+    
+}
+.pesoo{
+    left:500px;
+    position: relative;
+    top: 100px;
+    border-radius: 40px;
+    border-color: #f6bbc1;
+    padding: 10px;
+    background-color: #f6bbc1;
+    font-family: var(--font-primaria);
+    font-size: 30px;
+   
+    
+   
+}
+.peso{
+    left:550px;
+    position: relative;
+    top: 100px;
+    border-radius: 40px;
+    border-color: #f6bbc1;
+    padding: 20px;
+    
+
+}
+
+.altura{
+    left:200px;
+    position:relative;
+    top:200px;
+    border-radius: 40px;
+    border-color: #f6bbc1;
+    padding: 20px;
+  
+}
+
+.alturaa{
+    left:150px;
+    position:relative;
+    top:200px;
+    border-radius: 40px;
+    border-color: #f6bbc1;
+    padding: 10px;
+    background-color: #f6bbc1;
+    font-family: var(--font-primaria);
+    font-size: 30px;
+
+}
+
+
+.calcular{
+    left:650px;
+    position:relative;
+    top:250px;
+    border-radius: 40px;
+    border-color: #f6bbc1;
+    font-family: var(--font-primaria);
+    padding: 10px;
+    background-color: #f6bbc1;
+    font-size: 30px;
+}
+
+.calcular:hover{
+    padding: 10px 10px;
+    color: white;
+}
+.Star{
+    position: relative;
+    top: -280px;
+    left: 30px;
+    
+}
+
+
+.consultar {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    margin-top: 50px;
+}
+
+.consultarh2 {
+    font-family: var(--font-primaria);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.consultar_tabela {
+    width: 80%;
+    border-collapse: collapse;
+    font-family: var(--fonte-primaria);
+}
+
+.consultar_tabela th, .consultar_tabela td {
+    border: 1px solid rgb(241, 140, 140);
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.consultar_tabela th {
+    background-color: var(--cor-two);
+    font-weight: 600;
+}
+
+.consultar_tabela td {
+    background-color: #f9f9f9;
+}
+
+.consultar_tabela tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.consultar_tabela tr:hover {
+    background-color: var(--cor-two);
+}
+
+.link_nome{
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+.link_nome:hover{
+    border-radius: 10px;
+    animation-name: cor_link;
+    animation-duration: 1s;
+    background-color: var(--cor-two);
+}
+
+@keyframes cor_link {
+    from {background-color: var(--cor-tree)}
+    to {background-color: var(--cor-two);}
+}
